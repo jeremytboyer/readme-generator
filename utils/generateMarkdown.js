@@ -2,7 +2,10 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+    return `![GitHub license](https://img.shields.io/badge/license-${license.replace(
+      / /g,
+      ""
+    )}-blue.svg)`;
   }
   return "";
 }
@@ -29,7 +32,7 @@ This project is licensed under the ${license} license.`;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(ansObj) {
   return `# ${ansObj.title}
-## ${renderLicenseBadge('MIT')}\n
+## ${renderLicenseBadge(ansObj.license)}\n
 ## Table of Contents
 - [Project Description](#project-description)
 - [Installation](#installation)
@@ -42,10 +45,10 @@ function generateMarkdown(ansObj) {
 ## Project Description\n
 ${ansObj.description}\n
 ## Installation \n
-${ansObj.installation}
+${ansObj.installation}\n
 ## Usage \n
 ${ansObj.usage}\n
-${renderLicenseSection('MIT')}
+${renderLicenseSection(ansObj.license)}
 `;
 }
 
