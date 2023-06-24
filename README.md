@@ -1,5 +1,5 @@
-# jerm
-## ![GitHub license](https://img.shields.io/badge/license-GNUGeneralPublicLicensev3.0-blue.svg)
+# trst
+## ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Table of Contents
 - [Project Description](#project-description)
@@ -12,16 +12,24 @@
 
 ## Project Description
 
-this project is supposed to be
+tttt
 
 ## Installation 
 
-npm -i
+tttrrr
 
 ## Usage 
 
-sss0sisis0isi0sias0ias0iss
+rtgrr
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 license.
+This project is licensed under the MIT license.
+
+## Contributors 
+
+[jrm](https://github.com/jrm)
+,[gtt](https://github.com/gtt)
+,[t-trgtg](https://github.com/t-trgtg)
+
+

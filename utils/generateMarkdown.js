@@ -29,6 +29,22 @@ This project is licensed under the ${license} license.`;
   }
   return "";
 }
+
+// function to take the stringg from the result and split it into a new array and for each item in the array we build a string with a link
+function renderContributors(contributorsList) {
+  if(contributorsList){
+    const nameList = contributorsList.split(', ')
+    const nameLinkList = nameList.map(name => `https://github.com/${name}`)
+    return (
+    nameLinkList.map((link, index) => `[${nameList[index]}](${link})\n`
+    ));
+  } else {
+    return ""
+  }
+}
+
+
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(ansObj) {
   return `# ${ansObj.title}
@@ -48,7 +64,9 @@ ${ansObj.description}\n
 ${ansObj.installation}\n
 ## Usage \n
 ${ansObj.usage}\n
-${renderLicenseSection(ansObj.license)}
+${renderLicenseSection(ansObj.license)}\n
+## Contributors \n
+${renderContributors(ansObj.contributing)}\n
 `;
 }
 

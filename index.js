@@ -41,7 +41,12 @@ const questions = [
     choices: [...licenses],
     name: "license",
     message: "Please choose a license."
-  }, 
+  },
+  {
+    type: "input",
+    name: "contributing",
+    message: "Enter contributors by github user-name followed by a ', ' *No trailing comma on the last entry*",
+  } 
 ];
 
 // TODO: Create a function to write README file
