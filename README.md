@@ -21,7 +21,8 @@ npm -i
 
 ## Usage 
 
-run node index.js and answer the prompts in the terminal
+run node index.js and answer the prompts in the terminal 
+
 [Walkthrough Video](https://drive.google.com/file/d/1WJbVMNh9VE5GHjG-yN2RRleNWQ0zBoH_/view)
 
 ## License
