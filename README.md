@@ -1,4 +1,4 @@
-# Test Project
+# README Generator
 ## ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Table of Contents
@@ -13,15 +13,16 @@
 
 ## Project Description
 
-My prjoect was made blag blahgblhahs
+This app will generate a professional readme
 
 ## Installation 
 
-to install use npm -i
+npm -i
 
 ## Usage 
 
-index.js 
+run node index.js and answer the prompts in the terminal
+[Walkthrough Video](https://drive.google.com/file/d/1WJbVMNh9VE5GHjG-yN2RRleNWQ0zBoH_/view)
 
 ## License
 
@@ -29,7 +30,7 @@ This project is licensed under the MIT license.
 
 ## Contribution Guidelines
 
-Anyone can get involved 
+Anyone can caontribute 
 ## Contributors 
 
  [jeremytboyer](https://github.com/jeremytboyer)
@@ -37,7 +38,7 @@ Anyone can get involved
 
 ## Tests 
 
-No tests performed
+n/a
 
 ## Questions
 
