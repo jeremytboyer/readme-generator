@@ -24,7 +24,7 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "Provide a detailed description of your project. Explain its purpose, features, and any other relevant information that will help users understand what your project is about."
+    message: "Provide a detailed description of your project."
   },
   {
     type: "input",
@@ -34,7 +34,7 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "Provide instructions on how to use your project. Explain the different functionalities, commands, or interfaces available."
+    message: "Provide instructions on how to use your project."
   },
   {
     type: "list",
@@ -44,9 +44,29 @@ const questions = [
   },
   {
     type: "input",
+    name: "contributing_guidelines",
+    message: "Enter guidelines about how people can contribute to your project",
+  },
+  {
+    type: "input",
     name: "contributing",
     message: "Enter contributors by github user-name followed by a ', ' *No trailing comma on the last entry*",
-  } 
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "Please describe any tests performed. Include info about the testing framework",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Enter your email",
+  },
+  {
+    type: "input",
+    name: "ghUserName",
+    message: "Enter your Github User Name",
+  },
 ];
 
 // TODO: Create a function to write README file

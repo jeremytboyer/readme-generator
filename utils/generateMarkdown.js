@@ -36,7 +36,7 @@ function renderContributors(contributorsList) {
     const nameList = contributorsList.split(', ')
     const nameLinkList = nameList.map(name => `https://github.com/${name}`)
     return (
-    nameLinkList.map((link, index) => `[${nameList[index]}](${link})\n`
+    nameLinkList.map((link, index) => ` [${nameList[index]}](${link})\n`
     ));
   } else {
     return ""
@@ -53,10 +53,11 @@ function generateMarkdown(ansObj) {
 - [Project Description](#project-description)
 - [Installation](#installation)
 - [Usage](#usage)
-- License
-- Contributing
-- Tests
-- Questions 
+- [License](#license)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Contributors](#contributors)
+- [Tests](#test)
+- [Questions](#questions) 
 
 ## Project Description\n
 ${ansObj.description}\n
@@ -65,8 +66,15 @@ ${ansObj.installation}\n
 ## Usage \n
 ${ansObj.usage}\n
 ${renderLicenseSection(ansObj.license)}\n
+## Contribution Guidelines\n
+${ansObj.contributing_guidelines} 
 ## Contributors \n
 ${renderContributors(ansObj.contributing)}\n
+## Tests \n
+${ansObj.tests}\n
+## Questions\n
+Github: [${ansObj.ghUserName}](https://github.com/${ansObj.ghUserName})\n
+Email: [${ansObj.email}](mailto:${ansObj.email})
 `;
 }
 
